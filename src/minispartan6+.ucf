@@ -1,0 +1,197 @@
+net "clk_50mhz" period = 20 ns | loc = K3;
+net "clk_32mhz" period = 31.25 ns | loc = J4;
+
+# LEDs
+net "led(0)" loc = P11 | iostandard = lvttl | drive = 8 | slew = slow;
+net "led(1)" loc = N9  | iostandard = lvttl | drive = 8 | slew = slow;
+net "led(2)" loc = M9  | iostandard = lvttl | drive = 8 | slew = slow;
+net "led(3)" loc = P9  | iostandard = lvttl | drive = 8 | slew = slow;
+net "led(4)" loc = T8  | iostandard = lvttl | drive = 8 | slew = slow;
+net "led(5)" loc = N8  | iostandard = lvttl | drive = 8 | slew = slow;
+net "led(6)" loc = P8  | iostandard = lvttl | drive = 8 | slew = slow;
+net "led(7)" loc = P7  | iostandard = lvttl | drive = 8 | slew = slow;
+
+# Flash
+#net "flash_cs"   loc = T3  | iostandard = lvttl;
+#net "flash_clk"  loc = R11 | iostandard = lvttl;
+#net "flash_mosi" loc = T10 | iostandard = lvttl;
+#net "flash_miso" loc = P10 | iostandard = lvttl;
+
+# ADC
+#net "adc_dout" loc = H5 | iostandard = lvttl;
+#net "adc_din"  loc = H4 | iostandard = lvttl;
+#net "adc_cs"   loc = F6 | iostandard = lvttl;
+#net "adc_sclk" loc = G6 | iostandard = lvttl;
+
+# DIP switches
+net "dip_switch(0)"   loc = L1 | iostandard = lvttl | pullup;
+net "dip_switch(1)"   loc = L3 | iostandard = lvttl | pullup;
+net "dip_switch(2)"   loc = L4 | iostandard = lvttl | pullup;
+net "dip_switch(3)"   loc = L5 | iostandard = lvttl | pullup;
+
+# Micro SD card
+#net "sd_clk"     loc = L12 | iostandard = lvttl;
+#net "sd_cd_dat3" loc = K12 | iostandard = lvttl;
+#net "sd_dat0"    loc = M10 | iostandard = lvttl;
+#net "sd_dat1"    loc = L10 | iostandard = lvttl;
+#net "sd_dat2"    loc = J11 | iostandard = lvttl;
+#net "sd_cmd"     loc = K11 | iostandard = lvttl;
+
+# SDRAM
+#net "udqm"       loc = F15   | iostandard = lvttl;
+#net "sdram_clk"  loc = G16 | iostandard = lvttl;
+#net "cke"        loc = H16   | iostandard = lvttl;
+#net "bs1"        loc = T14   | iostandard = lvttl;
+#net "bs0"        loc = R14   | iostandard = lvttl;
+#net "sdram_cs_n" loc = R1  | iostandard = lvttl;
+#net "ras_n"      loc = R2    | iostandard = lvttl;
+#net "cas_n"      loc = T4    | iostandard = lvttl;
+#net "we_n"       loc = R5    | iostandard = lvttl;
+#net "ldqm"       loc = T5    | iostandard = lvttl;
+#net "a(0)"       loc = T15   | iostandard = lvttl;
+#net "a(1)"       loc = R16   | iostandard = lvttl;
+#net "a(2)"       loc = P15   | iostandard = lvttl;
+#net "a(3)"       loc = P16   | iostandard = lvttl;
+#net "a(4)"       loc = N16   | iostandard = lvttl;
+#net "a(5)"       loc = M15   | iostandard = lvttl;
+#net "a(6)"       loc = M16   | iostandard = lvttl;
+#net "a(7)"       loc = L16   | iostandard = lvttl;
+#net "a(8)"       loc = K15   | iostandard = lvttl;
+#net "a(9)"       loc = K16   | iostandard = lvttl;
+#net "a(10)"      loc = R15   | iostandard = lvttl;
+#net "a(11)"      loc = J16   | iostandard = lvttl;
+#net "a(12)"      loc = H15   | iostandard = lvttl;
+#net "d(0)"       loc = T13   | iostandard = lvttl;
+#net "d(1)"       loc = T12   | iostandard = lvttl;
+#net "d(2)"       loc = R12   | iostandard = lvttl;
+#net "d(3)"       loc = T9    | iostandard = lvttl;
+#net "d(4)"       loc = R9    | iostandard = lvttl;
+#net "d(5)"       loc = T7    | iostandard = lvttl;
+#net "d(6)"       loc = R7    | iostandard = lvttl;
+#net "d(7)"       loc = T6    | iostandard = lvttl;
+#net "d(8)"       loc = F16   | iostandard = lvttl;
+#net "d(9)"       loc = E15   | iostandard = lvttl;
+#net "d(10)"      loc = E16   | iostandard = lvttl;
+#net "d(11)"      loc = D16   | iostandard = lvttl;
+#net "d(12)"      loc = B16   | iostandard = lvttl;
+#net "d(13)"      loc = B15   | iostandard = lvttl;
+#net "d(14)"      loc = C16   | iostandard = lvttl;
+#net "d(15)"      loc = C15   | iostandard = lvttl;
+
+# Audio
+net "audio(0)" loc = B8 | iostandard = lvttl;
+net "audio(1)" loc = A8 | iostandard = lvttl;
+
+# HDMI in
+#net "hdmi_in_p(0)"  loc = C7 | iostandard = TMDS_33;
+#net "hdmi_in_n(0)"  loc = A7 | iostandard = TMDS_33;
+#net "hdmi_in_p(1)"  loc = B6 | iostandard = TMDS_33;
+#net "hdmi_in_n(1)"  loc = A6 | iostandard = TMDS_33;
+#net "hdmi_in_p(2)"  loc = B5 | iostandard = TMDS_33;
+#net "hdmi_in_n(2)"  loc = A5 | iostandard = TMDS_33;
+#net "hdmi_in_clk_p" loc = C9 | iostandard = TMDS_33;
+#net "hdmi_in_clk_n" loc = A9 | iostandard = TMDS_33;
+
+#net "fpga_scl" loc = C1 | iostandard = lvttl;
+#net "fpga_sda" loc = B1 | iostandard = lvttl;
+
+# HDMI out
+#net "hdmi_out_p(0)"  loc = C13 | IOSTANDARD = TMDS_33 ; # Blue
+#net "hdmi_out_n(0)"  loc = A13 | IOSTANDARD = TMDS_33 ;
+#net "hdmi_out_p(1)"  loc = B12 | IOSTANDARD = TMDS_33 ; # Red
+#net "hdmi_out_n(1)"  loc = A12 | IOSTANDARD = TMDS_33 ;
+#net "hdmi_out_p(2)"  loc = C11 | IOSTANDARD = TMDS_33 ; # Green
+#net "hdmi_out_n(2)"  loc = A11 | IOSTANDARD = TMDS_33 ;
+#net "hdmi_out_clk_p" loc = B14 | IOSTANDARD = TMDS_33 ; # Clock
+#net "hdmi_out_clk_n" loc = A14 | IOSTANDARD = TMDS_33 ;
+
+# FTDI
+#net "ftdi_rxf"   loc = N3 | iostandard = lvttl;
+#net "ftdi_txe"   loc = N1 | iostandard = lvttl;
+#net "ftdi_siwua" loc = M3 | iostandard = lvttl;
+#net "ftdi_we"    loc = M2 | iostandard = lvttl;
+#net "ftdi_rd"    loc = M1 | iostandard = lvttl;
+#net "ftdi_d(0)"  loc = M7 | iostandard = lvttl;
+#net "ftdi_d(1)"  loc = N6 | iostandard = lvttl;
+#net "ftdi_d(2)"  loc = M6 | iostandard = lvttl;
+#net "ftdi_d(3)"  loc = P5 | iostandard = lvttl;
+#net "ftdi_d(4)"  loc = N5 | iostandard = lvttl;
+#net "ftdi_d(5)"  loc = P4 | iostandard = lvttl;
+#net "ftdi_d(6)"  loc = P2 | iostandard = lvttl;
+#net "ftdi_d(7)"  loc = P1 | iostandard = lvttl;
+
+# Port A I/O pins
+net "io_a(0)"  loc = E7  | iostandard = lvttl;
+net "io_a(1)"  loc = C8  | iostandard = lvttl;
+net "io_a(2)"  loc = D8  | iostandard = lvttl;
+net "io_a(3)"  loc = E8  | iostandard = lvttl;
+net "io_a(4)"  loc = D9  | iostandard = lvttl;
+net "io_a(5)"  loc = A10 | iostandard = lvttl;
+net "io_a(6)"  loc = B10 | iostandard = lvttl;
+net "io_a(7)"  loc = C10 | iostandard = lvttl;
+net "io_a(8)"  loc = E10 | iostandard = lvttl;
+net "io_a(9)"  loc = F9  | iostandard = lvttl;
+net "io_a(10)" loc = F10 | iostandard = lvttl;
+net "io_a(11)" loc = D11 | iostandard = lvttl;
+
+# Port B I/O pins
+net "io_b(0)"  loc = E11 | iostandard = lvttl;
+net "io_b(1)"  loc = D14 | iostandard = lvttl;
+net "io_b(2)"  loc = D12 | iostandard = lvttl;
+net "io_b(3)"  loc = E12 | iostandard = lvttl;
+net "io_b(4)"  loc = E13 | iostandard = lvttl;
+net "io_b(5)"  loc = F13 | iostandard = lvttl;
+net "io_b(6)"  loc = F12 | iostandard = lvttl;
+net "io_b(7)"  loc = F14 | iostandard = lvttl;
+net "io_b(8)"  loc = G12 | iostandard = lvttl;
+net "io_b(9)"  loc = G14 | iostandard = lvttl;
+net "io_b(10)" loc = H14 | iostandard = lvttl;
+net "io_b(11)" loc = J14 | iostandard = lvttl;
+
+# Port C I/O pins
+net "io_c(0)"  loc = J13 | iostandard = lvttl;
+net "io_c(1)"  loc = J12 | iostandard = lvttl;
+net "io_c(2)"  loc = K14 | iostandard = lvttl;
+net "io_c(3)"  loc = L14 | iostandard = lvttl;
+net "io_c(4)"  loc = L13 | iostandard = lvttl;
+net "io_c(5)"  loc = M14 | iostandard = lvttl;
+net "io_c(6)"  loc = M13 | iostandard = lvttl;
+net "io_c(7)"  loc = N14 | iostandard = lvttl;
+net "io_c(8)"  loc = M12 | iostandard = lvttl;
+net "io_c(9)"  loc = N12 | iostandard = lvttl;
+net "io_c(10)" loc = P12 | iostandard = lvttl;
+net "io_c(11)" loc = M11 | iostandard = lvttl;
+
+# Port D I/O pins
+net "io_d(0)"  loc = D6 | iostandard = lvttl;
+net "io_d(1)"  loc = C6 | iostandard = lvttl;
+net "io_d(2)"  loc = E6 | iostandard = lvttl;
+net "io_d(3)"  loc = C5 | iostandard = lvttl;
+
+# Port E I/O pins
+net "io_e(0)"  loc = D5 | iostandard = lvttl;
+net "io_e(1)"  loc = A4 | iostandard = lvttl;
+net "io_e(2)"  loc = G5 | iostandard = lvttl;
+net "io_e(3)"  loc = A3 | iostandard = lvttl;
+net "io_e(4)"  loc = B3 | iostandard = lvttl;
+net "io_e(5)"  loc = A2 | iostandard = lvttl;
+net "io_e(6)"  loc = B2 | iostandard = lvttl;
+net "io_e(7)"  loc = C3 | iostandard = lvttl;
+net "io_e(8)"  loc = C2 | iostandard = lvttl;
+net "io_e(9)"  loc = D3 | iostandard = lvttl;
+net "io_e(10)" loc = D1 | iostandard = lvttl;
+net "io_e(11)" loc = E3 | iostandard = lvttl;
+
+# Port F I/O pins
+net "io_f(0)"  loc = E2 | iostandard = lvttl;
+net "io_f(1)"  loc = E1 | iostandard = lvttl;
+net "io_f(2)"  loc = E4 | iostandard = lvttl;
+net "io_f(3)"  loc = F4 | iostandard = lvttl;
+net "io_f(4)"  loc = F5 | iostandard = lvttl;
+net "io_f(5)"  loc = G3 | iostandard = lvttl;
+net "io_f(6)"  loc = F3 | iostandard = lvttl;
+net "io_f(7)"  loc = G1 | iostandard = lvttl;
+net "io_f(8)"  loc = H3 | iostandard = lvttl;
+net "io_f(9)"  loc = H1 | iostandard = lvttl;
+net "io_f(10)" loc = H2 | iostandard = lvttl;
+net "io_f(11)" loc = J1 | iostandard = lvttl;

@@ -1,0 +1,7 @@
+*
+!*/
+!src/*
+!README.md
+!.gitignore
+!*.xise
+!*.xco
