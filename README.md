@@ -26,7 +26,7 @@ How to build this project
 How to program the miniSpartan 6+
 ---------------------------------
 
-You should have followed the previous instructions on how to build this project and obtain the bitstream, called main.bit. Now, run:
+You should have followed the previous instructions on how to build this project and obtain the bitstream, called main.bit. Now, connect the dev board to your PC with the USB cable and run:
 
     xc3sprog -c ftdi path/to/main.bit
 
@@ -44,3 +44,18 @@ The dev board will not start using your design until the next startup. If you wa
 again, after programming your design to flash memory.
 
 It can be useful to make one of more scripts for programming the miniSpartan6+.
+
+Troubleshooting
+---------------
+
+If your invocation of `xc3sprog` shows an error similar to:
+```
+Could not open FTDI device (using libftdi): device not found
+FTD2XX Open failed
+```
+
+There might be something wrong with your USB drivers. I typically resolve this by downloading [Zadig](https://zadig.akeo.ie/).
+
+For me, after choosing `Options -> List All Devices` the miniSpartan6+ shows up as `Dual RS232-HS (Interface 0)` and `Dual RS232-HS (Interface 1)`. For me `libusb-win32` and `libusbK` seem to work with `xc3sprog`, while `WinUSB` and `USB Serial (CDC)` don't.
+
+Note that when I tried the different drivers, the process seems a bit flaky. Sometimes I can't get `xc3sprog` to work anymore even though I have `libusb-win32` and `libusbK` installed. Restarting Zadig, re-connecting the dev board, and re-installing `libusb-win32` or `libusbK` seems to fix it, though.
