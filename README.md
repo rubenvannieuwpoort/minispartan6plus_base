@@ -21,7 +21,7 @@ How to build this project
     git clone https://github.com/rubenvannieuwpoort/minispartan6plus_base
 
   2. Open the project by doubleclicking on minispartan6+.xise, or open Xilinx ISE WebPACK and open the file from there.
-  3. In the design pane on the left, make sure that 'implementation' is selected. In the second window from the top (the one under the message 'no processes running'), there should be a text that says 'Generate Programming File' (you might need to scroll down). Doubleclick this and wait until the process is done. A bitstream file main.bit should be generated in the repository folder.
+  3. In the design pane on the left, make sure that 'implementation' is selected. In the second window from the top (the one under the message 'no processes running'), there should be a text that says 'Generate Programming File' (you might need to scroll down). Doubleclick this and wait until the process is done. A bitstream file main.bit should be generated in the 'work' folder.
 
 How to program the miniSpartan 6+
 ---------------------------------
